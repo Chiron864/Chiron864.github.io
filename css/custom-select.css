@@ -1,0 +1,51 @@
+.disabled{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+  font-weight: bold;
+}
+
+select {
+    -webkit-appearance: none;
+    border-radius: 2.5px;
+}
+
+.custom-select select {
+    display: inline-block;
+    padding: 4px 3px 3px 5px;
+    margin: 0;
+    font: inherit;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 1.2;
+    background: DodgerBlue;
+    color:white;
+    border:0;
+    padding:10px; margin:-5px -15px -5px -5px;
+    display: block;
+    overflow: auto;
+}
+
+option{
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ option:hover{
+   background-color: rgba(0, 0, 0, 0.1);
+ }
+
+.no-pointer-events .custom-select:after {
+    content: none;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.sidebar{
+  display:inline-block; vertical-align:top; overflow:hidden;
+}

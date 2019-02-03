@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Refrigerator App</title>
+   <meta charset="utf-8">
+   <link href="css/custom-select.css" rel="stylesheet">
+   <link href="css/style.css" rel = "stylesheet">
+</head>
+<body onload = "fetchFood()">
+  <h1 class = "title centered">Refrigerator App</h1>
+  <form id = "myForm">
+  <div class = "wrapper2">
+    <div><input type = "text" class = "centered" id = "textBox" placeholder="food"></div>
+    <div id = "year"></div>
+    <div><input type="date" id="expirationInput" placeholder="expiration date"></div>
+    <div><button type = "submit" id = "addButton" class = "button" type = "button"><span class = "centered">ADD</span></button></div>
+    <div id = "preview"></div>
+    <div><button id = "removeButton" class = "button" type = "button"><span class = "centered">REMOVE</span></button></div>
+  </div>
+    <div class = "wrapper3">
+    <div><input type = "radio" name = "categoryRadio" id = "fruitRadio">Fruit</div>
+    <div><input type = "radio" name = "categoryRadio" id = "vegetableRadio">Vegetable</div>
+    <div><input type = "radio" name = "categoryRadio" id = "dairyRadio">Dairy</div>
+    <div><input type = "radio" name = "categoryRadio" id = "proteinRadio">Protein</div>
+    <div><input type = "radio" name = "categoryRadio" id = "grainRadio">Sauces</div>
+    <div><input type = "radio" name = "categoryRadio" id = "otherRadio">Other</div>
+    </div>
+  <div class = "wrapper2">
+    <div class="custom-select"><div class = "sidebar"><select id = "fruitSelect">
+      <option class = "disabled">Fruit: </option>
+    </select></div></div>
+    <div class="custom-select"><div class = "sidebar"><select id = "vegetableSelect">
+      <option
+       class = "disabled">Vegetable: </option>
+    </select></div></div>
+    <div class="custom-select"><div class = "sidebar"><select id = "dairySelect">
+      <option
+       class = "disabled">Dairy: </option>
+    </select></div></div>
+    <div class="custom-select"><div class = "sidebar"><select id = "proteinSelect">
+      <option
+       class = "disabled">Protein: </option>
+    </select></div></div>
+    <div class="custom-select"><div class = "sidebar"><select id = "grainSelect">
+      <option
+       class = "disabled">Sauces: </option>
+    </select></div></div>
+    <div class="custom-select"><div class = "sidebar"><select id = "otherSelect">
+      <option
+       class = "disabled">Other:</option>
+    </select></div></div>
+  </div>
+</form>
+<script src = "js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    /*background-color: rgb(160, 196, 255);
+    color: white;*/
+    text-decoration-style: bold;
+}
+
+#wrapper{
+  display: grid;
+  grid-template-columns: 49% 2% 49%;
+}
+
+.foodGroup{
+  border: 5px solid #68696b;
+  border-radius: 7.5px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+.connector{
+  margin: auto;
+  margin-left: 5px;
+  height: 40%;
+  width: 80%;
+  background-color: #68696b;
+}
+
+.row{
+  border-top: 5px solid #68696b;
+}
