@@ -247,13 +247,17 @@ function fetchFood(){
     //console.log("select", select);
     //Build output
     removeOptions(select);
-    var expMonthDay = mm + "-" + dd;
     year.innerHTML = yyyy;
     if(arrays !== null){
       for(var i = 0; i < arrays.length; i++){
         //console.log(arrays);
         var food = arrays[i].food;
         var exp = arrays[i].exp;
+
+
+        console.log(exp);
+        var expMonthDay = exp.substring(5, exp.length);
+        console.log(expMonthDay);
 
         var option = document.createElement('option');
         option.text = food + "  " + expMonthDay;
